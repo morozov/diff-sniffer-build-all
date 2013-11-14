@@ -1,0 +1,17 @@
+{
+  "name": "morozov/diff-sniffer-build-all",
+  "description": "Kind of continious integration thing for diff-sniffer-* packages",
+  "require": {
+    "morozov/bootstrap": "1.0.*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergei Morozov",
+      "email": "morozov@tut.by"
+    }
+  ],
+  "autoload": {
+    "files": ["src/build-all/functions.php"]
+  }
+}
