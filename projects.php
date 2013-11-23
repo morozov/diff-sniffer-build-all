@@ -6,13 +6,22 @@ return array(
     ),
     'diff-sniffer-pre-commit-sugarcrm' => array(
         'app_name' => 'pre-commit',
+        'src' => 'diff-sniffer-pre-commit',
+        'standard' => __DIR__
+            . '/../code-sniffer-sugarcrm/PHP/CodeSniffer/Standards/SugarCRM',
     ),
     'diff-sniffer-pre-commit-psr2' => array(
         'app_name' => 'pre-commit',
         'src' => 'diff-sniffer-pre-commit',
-        'config' => 'psr2.php',
+        'standard' => 'PSR2',
     ),
     'diff-sniffer-pull-request' => array(
         'app_name' => 'pull-request',
+    ),
+    'diff-sniffer-pull-request-sugarcrm' => array(
+        'app_name' => 'pull-request',
+        'src' => 'diff-sniffer-pull-request',
+        'standard' => __DIR__
+            . '/../code-sniffer-sugarcrm/PHP/CodeSniffer/Standards/SugarCRM',
     ),
 );

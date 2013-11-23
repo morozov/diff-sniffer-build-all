@@ -12,17 +12,17 @@ function buildAll($workspaceRoot, $appRoot, $builder, array $projects)
             $src = $project;
         }
 
-        if (isset($params['config'])) {
-            $config = $appRoot . '/config/' . $params['config'];
+        if (isset($params['standard'])) {
+            $standard = $params['standard'];
         } else {
-            $config = null;
+            $standard = null;
         }
 
         $cmd = getCommand(
             $builder,
             $appName,
             $workspaceRoot . '/' . $src,
-            $config,
+            $standard,
             $appRoot . '/build/' . $project . '/' . $appName . '.phar'
         );
 
@@ -39,7 +39,7 @@ function buildAll($workspaceRoot, $appRoot, $builder, array $projects)
     }
 }
 
-function getCommand($builder, $appName, $src, $config, $output)
+function getCommand($builder, $appName, $src, $standard, $output)
 {
     $cmd = array(
         $builder,
@@ -47,9 +47,9 @@ function getCommand($builder, $appName, $src, $config, $output)
         $src,
     );
 
-    if ($config !== null) {
-        $cmd[] = '-c';
-        $cmd[] = $config;
+    if ($standard !== null) {
+        $cmd[] = '-s';
+        $cmd[] = $standard;
     }
     $cmd[] = $output;
 
