@@ -18,12 +18,13 @@ function buildAll($workspaceRoot, $appRoot, $builder, array $projects)
             $standard = null;
         }
 
+        $fileName = str_replace('diff-sniffer-', '', $project) . '.phar';
         $cmd = getCommand(
             $builder,
             $appName,
             $workspaceRoot . '/' . $src,
             $standard,
-            $appRoot . '/build/' . $project . '/' . $appName . '.phar'
+            $appRoot . '/build/' . $fileName
         );
 
         echo 'Building ' . $project . '... ';
