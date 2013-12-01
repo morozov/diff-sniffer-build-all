@@ -76,7 +76,7 @@ function execCommand($cmd, &$error)
 function formatError($error)
 {
     $marker = '> ';
-    if (posix_isatty(STDOUT)) {
+    if (function_exists('posix_isatty') && posix_isatty(STDOUT)) {
         $cols = `tput cols`;
         $error = chunk_split($error, $cols - strlen($marker), $marker);
         $error = substr($error, 0, -strlen($marker));
