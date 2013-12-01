@@ -8,7 +8,7 @@ return array(
         'app_name' => 'pre-commit',
         'src' => 'diff-sniffer-pre-commit',
         'standard' => __DIR__
-            . '/../code-sniffer-sugarcrm/PHP/CodeSniffer/Standards/SugarCRM',
+            . '/../sugarcrm-coding-standards/PHP/CodeSniffer/Standards/SugarCRM',
     ),
     'diff-sniffer-pre-commit-psr2' => array(
         'app_name' => 'pre-commit',
@@ -22,6 +22,6 @@ return array(
         'app_name' => 'pull-request',
         'src' => 'diff-sniffer-pull-request',
         'standard' => __DIR__
-            . '/../code-sniffer-sugarcrm/PHP/CodeSniffer/Standards/SugarCRM',
+            . '/../sugarcrm-coding-standards/PHP/CodeSniffer/Standards/SugarCRM',
     ),
 );
