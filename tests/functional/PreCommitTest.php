@@ -61,18 +61,21 @@ class PreCommitTest extends \PHPUnit_Framework_TestCase
                 'no-comma-space' => false,
                 'no-vendor-prefix' => false,
                 'hundred-char-string' => false,
+                'sugarcrm' => false,
             ),
             'pre-commit-psr2' => array(
                 'empty' => true,
                 'no-comma-space' => false,
                 'no-vendor-prefix' => false,
                 'hundred-char-string' => true,
+                'sugarcrm' => false,
             ),
             'pre-commit-sugarcrm' => array(
                 'empty' => true,
                 'no-comma-space' => false,
                 'no-vendor-prefix' => true,
                 'hundred-char-string' => true,
+                'sugarcrm' => true,
             ),
         );
 
