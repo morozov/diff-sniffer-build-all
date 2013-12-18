@@ -44,6 +44,7 @@ class PreCommitTest extends \PHPUnit_Framework_TestCase
         $app = self::$buildDir . '/' . $project . '.phar';
         exec('git add "' . $fixturePath . '"');
 
+        $this->assertFileExists($app, $project . '.phar is not built');
         exec('"' . $app . '"', $output, $exit_code);
 
         if ($expected) {
