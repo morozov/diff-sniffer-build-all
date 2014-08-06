@@ -1,9 +1,11 @@
 <?php
 
+require_once 'BaseClass.php';
+
 /**
  * Documentation is very important
  */
-  class WorkFlowAction
+class WorkFlowAction
 {
     public function populate_from_save()
     {
