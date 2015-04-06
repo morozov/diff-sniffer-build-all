@@ -48,7 +48,7 @@ class PreCommitTest extends \PHPUnit_Framework_TestCase
         exec('"' . $app . '"', $output, $exit_code);
 
         if ($expected) {
-            $this->assertEquals(0, $exit_code);
+            $this->assertEquals(0, $exit_code, implode(PHP_EOL, $output));
         } else {
             $this->assertEquals(1, $exit_code);
         }
