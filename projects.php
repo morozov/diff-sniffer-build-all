@@ -1,24 +1,24 @@
 <?php
 
 return array(
-    'diff-sniffer-pre-commit' => array(
+    'pre-commit' => array(
         'app_name' => 'pre-commit',
         'standard' => 'PSR2',
     ),
-    'diff-sniffer-pre-commit-sugarcrm' => array(
+    'pre-commit-sugarcrm' => array(
         'app_name' => 'pre-commit',
-        'src' => 'diff-sniffer-pre-commit',
+        'src' => 'pre-commit',
         'standard' => __DIR__
-            . '/../sugarcrm-coding-standards/PHP/CodeSniffer/Standards/SugarCRM',
+            . '/../../sugar-lint-rules/phpcs/Mango',
     ),
-    'diff-sniffer-pull-request' => array(
+    'pull-request' => array(
         'app_name' => 'pull-request',
         'standard' => 'PSR2',
     ),
-    'diff-sniffer-pull-request-sugarcrm' => array(
+    'pull-request-sugarcrm' => array(
         'app_name' => 'pull-request',
-        'src' => 'diff-sniffer-pull-request',
+        'src' => 'pull-request',
         'standard' => __DIR__
-            . '/../sugarcrm-coding-standards/PHP/CodeSniffer/Standards/SugarCRM',
+            . '/../../sugar-lint-rules/phpcs/Mango',
     ),
 );

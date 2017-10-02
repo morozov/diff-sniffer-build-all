@@ -26,7 +26,7 @@ require $autoload;
 
 $appRoot = dirname(__DIR__);
 $workspaceRoot = dirname($appRoot);
-$builder = $workspaceRoot . '/diff-sniffer-builder/bin/build';
+$builder = $workspaceRoot . '/builder/bin/build';
 $projects = require $appRoot . '/projects.php';
 
 builder\buildAll($workspaceRoot, $appRoot, $builder, $projects);
