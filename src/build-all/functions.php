@@ -77,7 +77,7 @@ function formatError($error)
 {
     $marker = '> ';
     if (function_exists('posix_isatty') && posix_isatty(STDOUT)) {
-        $cols = `tput cols`;
+        $cols = rtrim(`tput cols`, PHP_EOL);
         $error = chunk_split($error, $cols - strlen($marker), $marker);
         $error = substr($error, 0, -strlen($marker));
     }
