@@ -2,7 +2,7 @@
   "name": "morozov/diff-sniffer-build-all",
   "description": "Kind of continious integration thing for diff-sniffer-* packages",
   "require": {
-    "morozov/bootstrap": "1.0.*"
+    "morozov/bootstrap": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "~4"
