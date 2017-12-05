@@ -3,8 +3,9 @@
 namespace DiffSniffer;
 
 use builder;
+use PHPUnit\Framework\TestCase;
 
-class PreCommitTest extends \PHPUnit_Framework_TestCase
+class PreCommitTest extends TestCase
 {
     private static $fixtureDir;
     private static $buildDir;
