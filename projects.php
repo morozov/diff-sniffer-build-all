@@ -3,7 +3,11 @@
 return array(
     'pre-commit' => array(
         'app_name' => 'pre-commit',
-        'standard' => 'PSR2',
+        'src' => 'git',
+    ),
+    'git-phpcs' => array(
+        'app_name' => 'git-phpcs',
+        'src' => 'git',
     ),
     'pre-commit-sugarcrm' => array(
         'app_name' => 'pre-commit',
