@@ -62,15 +62,7 @@ class PreCommitTest extends TestCase
                 'empty' => true,
                 'no-comma-space' => false,
                 'no-vendor-prefix' => false,
-                'hundred-char-string' => true,
                 'sugarcrm' => false,
-            ),
-            'pre-commit-sugarcrm' => array(
-                'empty' => true,
-                'no-comma-space' => false,
-                'no-vendor-prefix' => true,
-                'hundred-char-string' => true,
-                'sugarcrm' => true,
             ),
         );
 
